@@ -1,0 +1,22 @@
+[project]
+name = "sandbox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.9"
+dependencies = [
+    "concrete-core[openai]>=0.0.4",
+    "concrete-db>=0.0.0",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple/"
+default = true
